@@ -11,7 +11,7 @@ spark = spark_session()
 data_product_url = "http://localhost:8000"
 
 config = configparser.ConfigParser()
-config.read('../data_product_example/config.ini')
+config.read('../enriched_customer_events_data_product/config.ini')
 
 s3_output_port = config['test']['s3_output_port']
 bucket_name = config['test']['s3_bucket']

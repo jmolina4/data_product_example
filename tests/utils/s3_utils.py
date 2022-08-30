@@ -6,7 +6,7 @@ from botocore.exceptions import ClientError
 import configparser
 
 config = configparser.ConfigParser()
-config.read('../data_product_example/config.ini')
+config.read('../enriched_customer_events_data_product/config.ini')
 
 ACCESS_ID = config['test']['aws_access_key_id']
 ACCESS_KEY = config['test']['aws_secret_access_key']

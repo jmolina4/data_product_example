@@ -30,7 +30,7 @@ def main(argv):
     environment = 'test'
     import configparser
     config = configparser.ConfigParser()
-    config.read('../data_product_example/config.ini')
+    config.read('../enriched_customer_events_data_product/config.ini')
     s3_uri = str(config[environment]['s3_output_port'])
 
     publish_table_output_port(events, s3_uri, 'parquet')
